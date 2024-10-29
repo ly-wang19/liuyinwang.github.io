@@ -3,83 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>王刘鄞成果简介</title>
+  <title>王刘鄞的简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-    h1, h2, h3 { color: #333; }
-    ul { list-style-type: none; padding: 0; }
-    .contact-info { margin-bottom: 20px; }
-    .section { margin-bottom: 40px; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+      font-weight: 600;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .section ul li::before {
+      content: "• ";
+      color: #333;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .section-content {
+      padding: 10px 0;
+    }
+    .section-title {
+      font-size: 1.4em;
+      color: #0056b3;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
-  <h1>王刘鄞</h1>
-  <div class="contact-info">
-    <p>✉️ 邮箱: <a href="mailto:liuyinwangthu@gmail.com">liuyinwangthu@gmail.com</a></p>
-  </div>
+  <div class="container">
+    <header>
+      <h1>王刘鄞</h1>
+      <div class="contact-info">
+        <div>📞 手机: 177-9637-0110</div>
+        <div>✉️ 邮箱: <a href="mailto:liuyinwangthu@gmail.com">liuyinwangthu@gmail.com</a></div>
+      </div>
+    </header>
 
-  <div class="section">
-    <h2>🎓 教育背景</h2>
-    <ul>
-      <li><strong>清华大学</strong> - 计算机系 硕士 (2019.08 - 2022.06) <br> 班长、优秀毕业生</li>
-      <li><strong>西安电子科技大学</strong> - 自动化 本科 (2015.09 - 2019.07) <br> 前5%，科技社团主席</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>🎓 教育背景</h2>
+      <ul>
+        <li><span class="section-title">清华大学</span> - 计算机系 硕士 (2019.08 - 2022.06)</li>
+        <li><span class="section-title">西安电子科技大学</span> - 自动化 本科 (2015.09 - 2019.07)</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>💻 专业技能</h2>
-    <p>自然语言处理 (NLP)、搜索推荐、数据挖掘、机器学习、深度学习、产品与研发管理</p>
-  </div>
+    <div class="section">
+      <h2>💻 专业技能</h2>
+      <div class="section-content">
+        自然语言处理 (NLP)、搜索推荐、数据挖掘、机器学习、深度学习、产品与研发管理
+      </div>
+    </div>
 
-  <div class="section">
-    <h2>💼 工作经历</h2>
-    
-    <h3>牧原食品股份有限公司 - 信息化负责人 (2022.02 - 至今)</h3>
-    <ul>
-      <li><strong>信息化与AI战略：</strong> 制定并落实公司信息化及AI战略，优化信息化管理体系。</li>
-      <li><strong>项目与产品管理：</strong> 主导绩效管理、干部管理等多项系统的设计与实施。</li>
-      <li><strong>团队管理：</strong> 带领250+人的信息化团队，搭建技术委员会机制，提升团队执行力。</li>
-      <li><strong>技术创新：</strong> 推动大数据、AI等新技术在养猪全产业链的应用。</li>
-    </ul>
+    <div class="section">
+      <h2>💼 工作经历</h2>
+      <div class="section-content">
+        <h3 class="section-title">牧原食品股份有限公司 - 信息化负责人 (2022.02 - 至今)</h3>
+        <ul>
+          <li>全面负责公司信息化及AI战略规划和实施</li>
+          <li>主导多个大型信息化项目，从需求分析到验收，确保按时按质完成</li>
+          <li>管理250+人的信息化团队，构建技术委员会机制</li>
+        </ul>
 
-    <h3>腾讯 - 微信搜一搜 搜索推荐算法工程师 (2021.04 - 2022.02)</h3>
-    <ul>
-      <li>探索社交推荐算法与Graph Embedding的研究与实践。</li>
-      <li>优化搜索Rerank模型及多任务模型结构。</li>
-    </ul>
-    
-    <h3>微软亚洲研究院 - 大模型算法实习生 (2020.10 - 2021.01)</h3>
-    <ul>
-      <li>参与新闻推荐模型的研究，负责Bing必应新闻的大模型预训练工作。</li>
-    </ul>
-  </div>
+        <h3 class="section-title">腾讯 - 微信搜一搜 搜索推荐算法工程师 (2021.04 - 2022.02)</h3>
+        <ul>
+          <li>社交推荐算法和Graph Embedding的研究与实践</li>
+          <li>改进搜索Rerank模型和多任务模型结构</li>
+        </ul>
+        
+        <h3 class="section-title">微软亚洲研究院 - 大模型算法实习生 (2020.10 - 2021.01)</h3>
+        <ul>
+          <li>负责Bing必应新闻的推荐模型及大模型预训练工作</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="section">
-    <h2>📜 论文与专利</h2>
-    <ul>
-      <li>Liuyin Wang, Zihan Xu, et al. "Answer-driven Deep Question Generation based on Reinforcement Learning." <em>COLING 2020</em>.</li>
-      <li>L. Wang, D. Sheng, et al. "Question Generation via Multi-stage Answers Editing Network." <em>IJCNN 2021</em>.</li>
-      <!-- 添加更多论文或专利 -->
-    </ul>
-  </div>
+    <div class="section">
+      <h2>📜 论文与专利</h2>
+      <ul>
+        <li>Liuyin Wang, Zihan Xu, et al. "Answer-driven Deep Question Generation based on Reinforcement Learning." <em>COLING 2020</em></li>
+        <li>L. Wang, D. Sheng, et al. "Question Generation via Multi-stage Answers Editing Network." <em>IJCNN 2021</em></li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>🏆 奖励与荣誉</h2>
-    <ul>
-      <li>2018年 国家奖学金，2019年 清华大学优秀毕业生</li>
-      <li>2017年 全国大学生电子设计大赛 全国二等奖</li>
-      <!-- 添加更多奖项 -->
-    </ul>
-  </div>
+    <div class="section">
+      <h2>🏆 奖励与荣誉</h2>
+      <ul>
+        <li>2018年 国家奖学金，2019年 清华大学优秀毕业生</li>
+        <li>2017年 全国大学生电子设计大赛 全国二等奖</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>💼 项目经历</h2>
-    <ul>
-      <li>2021年 腾讯犀牛鸟精英人才培养计划 - 搜索中的用户点击行为探索</li>
-      <li>2018年 大学生创新项目 - 基于北斗定位的仿生两栖勘测蛇</li>
-      <!-- 添加更多项目 -->
-    </ul>
+    <div class="section">
+      <h2>💼 项目经历</h2>
+      <ul>
+        <li>2021年 腾讯犀牛鸟精英人才培养计划 - 搜索中的用户点击行为探索</li>
+        <li>2018年 大学生创新项目 - 基于北斗定位的仿生两栖勘测蛇</li>
+      </ul>
+    </div>
   </div>
 
 </body>
